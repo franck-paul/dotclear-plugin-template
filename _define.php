@@ -19,16 +19,17 @@ $this->registerModule(
     "Franck Paul and contributors",                         // Author
     '0.1',                                                  // Version
     [
-        'requires'    => [['core', '2.16']],
+        'requires'    => [['core', '2.20']],
         'permissions' => 'usage,contentadmin',                        // Permissions
         'type'        => 'plugin',                                    // Type
         'priority'    => 1000,                                        // Priority
-        'support'     => 'https://github.com/franck-paul/??????????', // Support URL
-        'details'     => 'https://open-time.net/?q=????????????????', // Details
         'settings'    => [                                            // Settings
-            'self' => '',
-            'blog' => '#params.????????',
-            'pref' => '#user-options.????????'
-        ]
+            'self' => '',                       // Have a specific setting page (index.php)
+            'blog' => '#params.????????',       // Have a section in blog parameters (3rd party plugins)
+            'pref' => '#user-options.????????'  // Have a section in user preferences
+        ],
+        'support'     => 'https://github.com/franck-paul/??????????',                               // Support URL
+        'details'     => 'https://open-time.net/?q=????????????????',                               // Details
+        'repository'  => 'https://raw.githubusercontent.com/franck-paul/????/master/dcstore.xml',   // Alternate repository
     ]
 );
